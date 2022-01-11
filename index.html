@@ -13,11 +13,12 @@
             border-radius: 5px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
     }
     .photo img{
         width:150px;
         height:150px;
-        margin-left: 50px;
+        margin-left: 60px;
     
         
 
@@ -42,6 +43,11 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .photofram:hover .photo{
+        transform: scale(1.5) rotate(15deg);
+        transition: transform 2s ease-in-out;
+    }
+    
     </style>
 </head>
 <body>
@@ -49,6 +55,16 @@
     <section>
         <h3>Akash's Album</h3>
         <div class="photo-album">
+            <div class="photofram">
+                <div class="photo">
+                    <img src="images/ag.png" alt=""> 
+
+                </div>
+                <div class="photo-detail">
+                    <h3>Akash Ghosh</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus asperiores voluptate repellat perspiciatis nihil ipsum repudiandae rem itaque, doloremque ducimus, corporis, id architecto alias suscipit impedit. Repellat, corrupti. Placeat, impedit!</p>
+                </div>
+            </div>
             <div class="photofram">
                 <div class="photo">
                     <img src="images/ag.png" alt=""> 
